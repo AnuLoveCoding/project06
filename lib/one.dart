@@ -38,7 +38,7 @@ class firstpage extends StatelessWidget {
 
               child: Column(
                 children: [
-                  Image(image: AssetImage(imagelist[pos])),
+                  Image(image: AssetImage(imagelist[pos]),height: 100.0,width: double.infinity,),
                    Text(prime[pos])
 
               // ListTile(

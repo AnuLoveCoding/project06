@@ -38,37 +38,68 @@ class pminister extends StatelessWidget {
         centerTitle: true,
       ),
 
-      body: Container(
+      body: Column(
+        children: [
+          if(p==0)...[
+           Expanded(child:Container(
 
-        color: Colors.orange,
-        alignment: Alignment.center,
-        margin: EdgeInsets.all(20.0),
-        padding: EdgeInsets.all(20.0),
+              color: Colors.orange,
+              alignment: Alignment.center,
+              margin: EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(20.0),
 
-        child: ListView.builder(
-            itemCount: mini.length,
-            itemBuilder: (BuildContext context, int pos){
-          return Column(
-            children: [
+              child: ListView.builder(
+                  itemCount: mini.length,
+                  itemBuilder: (BuildContext context, int pos){
+                      return Column(
+                        children: [
+                            Image(image: AssetImage(mini[pos].imagee), width: 100.0, height: 100.0,),
+                            Text(mini[pos].name, style: TextStyle(decoration: TextDecoration.combine([TextDecoration.underline])),),
+                            SizedBox(height: 10.0,),
+                        ],
+                      );
+                    }
 
-              if(p==0)...[
-                Image(image: AssetImage(mini[pos].imagee),
-                  width: 100.0,
-                  height: 100.0,),
-                Text(mini[pos].name, style: TextStyle(
-                    decoration: TextDecoration.combine(
-                        [TextDecoration.underline])),),
-                SizedBox(height: 10.0,),
+                  ),
+            ),
+           )
+          ]
+          else if(p == 1)...[
+
+            Expanded(child:
+            Container(
+              margin: EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(20.0),
+              alignment: Alignment.center,
+
+              child:ListView.builder(
+              itemCount: do1.length ,
+              itemBuilder: (BuildContext context, int pos){
+                return Column(
+                children: [
+                    Image(image: AssetImage(do1[pos].imagee),height: 100.0, width: 100.0,),
+                    Text(do1[pos].name),
+                    SizedBox(height: 10.0,)
+                ],
+
+              );
+              }
+
+            )
 
 
-              ],
-              // else if.....
-              //else if....
+          ),)
 
-            ],
-          );
-        }),
-      ),
+          ]
+
+         //  else if
+        ],
+      )
+
+
+
+
+
     );
 
   }
