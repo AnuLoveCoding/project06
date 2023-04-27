@@ -5,9 +5,9 @@ import 'Modelclass.dart';
 
 class actress extends StatelessWidget {
 
-  List<actree> actres = [
-    actree(name: 'Disha Patni', imagee: '../images/disha.jpg'),
-    actree(name: 'Priyanka Chopra', imagee: '../images/priyanka.jpg'),
+  List<Modelclass> actres = [
+    Modelclass(name: 'Disha Patni', imagee: '../images/disha.jpg'),
+    Modelclass(name: 'Priyanka Chopra', imagee: '../images/priyanka.jpg'),
   ];
 
   @override

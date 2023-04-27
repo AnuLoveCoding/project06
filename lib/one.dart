@@ -31,7 +31,7 @@ class firstpage extends StatelessWidget {
           return GestureDetector(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return pminister();
+                  return pminister(p:pos);
                 }));
 
               },

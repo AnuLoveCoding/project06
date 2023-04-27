@@ -3,9 +3,9 @@ import 'package:project06/Modelclass.dart';
 
 class comedy extends StatelessWidget {
 
-  List<comdeyy> comee = [
-    comdeyy(name: 'Raju Srivastav', imagee: '../images/raju.jpg'),
-    comdeyy(name: 'Kapli Sharma', imagee: '../images/kapil.jpg'),
+  List<Modelclass> comee = [
+    Modelclass(name: 'Raju Srivastav', imagee: '../images/raju.jpg'),
+    Modelclass(name: 'Kapli Sharma', imagee: '../images/kapil.jpg'),
   ];
 
 

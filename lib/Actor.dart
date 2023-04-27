@@ -4,10 +4,10 @@ import 'package:project06/Modelclass.dart';
 class act extends StatelessWidget {
 
 
-  List<actor> person = [
+  List<Modelclass> person = [
 
-    actor(name: 'Akshay Kumar', imagee: '../images/akshay.jpg'),
-    actor(name: 'SalmanKhan', imagee: '../images/salman.jpg'),
+    Modelclass(name: 'Akshay Kumar', imagee: '../images/akshay.jpg'),
+    Modelclass(name: 'SalmanKhan', imagee: '../images/salman.jpg'),
 
   ];
 

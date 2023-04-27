@@ -3,10 +3,10 @@ import 'package:project06/Modelclass.dart';
 
 class docc extends StatelessWidget {
 
-  List<doc> do1 = [
+  List<Modelclass> do1 = [
 
-    doc(name: 'Mansukh', imagee: '../images/mansukh.jpg'),
-    doc(name: 'Harsh Vardhan', imagee: '../images/vardhan.jpg'),
+    Modelclass(name: 'Mansukh', imagee: '../images/mansukh.jpg'),
+    Modelclass(name: 'Harsh Vardhan', imagee: '../images/vardhan.jpg'),
 
   ];
 
