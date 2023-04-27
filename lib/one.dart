@@ -37,33 +37,10 @@ class firstpage extends StatelessWidget {
               },
 
               child: Column(
-            children: [
-              Image(image: AssetImage(imagelist[pos])),
-               Text(prime[pos])
+                children: [
+                  Image(image: AssetImage(imagelist[pos])),
+                   Text(prime[pos])
 
-            /*  ListTile(
-
-                leading: Icon(Icons.person,color: Colors.indigoAccent,),
-                title: Text(prime[pos]),
-               *//* trailing: Icon(Icons.phone,color: Colors.lightBlue,),
-                onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return pminister();
-                    }));
-                },*//*
-              ),*/
-
-            /*  ListTile(
-                leading: Icon(Icons.medical_information),
-                title: Text('Doctor'),
-                trailing:  const Text('Doctor',style: TextStyle(color: Colors.deepOrangeAccent),),
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return docc();
-                  }));
-                },
-              ),
-*/
               // ListTile(
               //   leading: Icon(Icons.theater_comedy),
               //   title: Text('Comedian'),
