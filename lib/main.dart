@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project06/demo.dart';
-
-
 import 'Firstpage.dart';
 
 void main() {
